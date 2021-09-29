@@ -15,7 +15,7 @@
   --text_secondary_color: #fff;
   --title_color: #000;
   --body_color: #ffffff;
-  --container_color: #F2F5F6;
+  --container_color: #f2f5f6;
 }
 @media screen and (min-width: 991px) {
   :root {
@@ -266,7 +266,7 @@ main .subsection .content .textbox ul {
   margin: 9px 24px;
 }
 main .subsection .content .textbox ul li:before {
-  content: '✓ ';
+  content: "✓ ";
   color: var(--primary_color);
 }
 main .subsection .content .textbox h1 {
@@ -323,7 +323,7 @@ main .subsection .content .textbox ul {
   margin: 9px 24px;
 }
 main .subsection .content .textbox ul li:before {
-  content: '✓ ';
+  content: "✓ ";
   color: var(--primary_color);
 }
 main .subsection .content .textbox h1 {
@@ -352,6 +352,9 @@ main .subsection .content .textbox a {
   border-radius: 100px;
 }
 
+main .blogs {
+  padding-bottom: 8rem;
+}
 main .blogs .title {
   display: flex;
   justify-content: center;
@@ -380,4 +383,164 @@ main .blogs .title p {
 main .blogs .blogcards {
   display: flex;
   justify-content: space-around;
+}
+main .blogs .blogcards .author {
+  display: inline;
+}
+main .blogs .blogcards .author::before {
+  content: "👤 ";
+  color: var(--primary_color);
+}
+main .blogs .blogcards .date {
+  display: inline;
+  text-transform: capitalize;
+}
+main .blogs .blogcards .date::before {
+  content: "🗓 ";
+  color: var(--primary_color);
+}
+main .blogs .blogcards .card-title {
+  text-transform: capitalize;
+  margin-top: 0.6rem;
+}
+main .blogs .blogcards .button {
+  display: block;
+  margin-top: 0.6rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  color: var(--primary_color);
+  text-transform: capitalize;
+}
+
+footer .getinthouch .map {
+  width: 100%;
+  position: relative;
+}
+footer .getinthouch .map .googlemap {
+  background-image: url("../images/map.png");
+  width: 100%;
+  height: 400px;
+  filter: grayscale(1);
+  background-position: center;
+  background-size: cover;
+}
+footer .getinthouch .map .formbox {
+  position: absolute;
+  height: 100%;
+  top: 2rem;
+  right: calc(20% + 5rem);
+  background: var(--body_color);
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+footer .getinthouch .map .formbox input,
+footer .getinthouch .map .formbox textarea {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  resize: none;
+}
+footer .getinthouch .map .formbox .button {
+  position: absolute;
+  bottom: 1.5rem;
+  text-transform: capitalize;
+  display: inline-block;
+  color: var(--text_secondary_color);
+  padding: 6px 24px;
+  border: none;
+  outline: none;
+  background: var(--primary_color);
+  border-radius: 100px;
+}
+footer .getinthouch .contact{
+  padding: 8rem 0 4rem 0;
+}
+footer .getinthouch .contact .addressbox{
+  display: flex;
+  padding: 2rem;
+}
+footer .getinthouch .contact .icon{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--container_color);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--primary_color);
+}
+footer .getinthouch .contact .text{
+  padding-left: .8rem;
+  text-transform: capitalize;
+}
+
+footer .newsletter .head {
+  text-align: center;
+}
+footer .newsletter .head h3 {
+  text-align: center;
+  margin-bottom: .5rem;
+  text-transform: capitalize;
+}
+footer .newsletter .tail {
+  padding: 3rem 0;
+}
+footer .newsletter .tail .iconbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .newsletter .tail .iconbar .icon{
+  width: 3rem;
+  height: 3rem;
+  margin: 0.4rem;
+  border-radius: 50%;
+  border: 1px var(--text_color) solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: var(--text_color);
+}
+footer .newsletter .tail .inputbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .newsletter .tail .inputbar .email {
+  border-radius: 50px;
+  padding: 0.8rem;
+  background: var(--container_color);
+}
+footer .newsletter .tail .inputbar .mybtn {
+  border-radius: 50px;
+  background: var(--primary_color);
+  color: var(--text_secondary_color);
+  border: none;
+  width: 25%;
+  justify-content: center;
+  cursor: pointer;
+}
+footer .newsletter .tail .inputbar .mybtn a{
+  background: var(--primary_color);
+  color: var(--text_secondary_color);
+  object-fit: cover;
+}
+
+footer .copyright{
+  width: 100%;
+  background: var(--container_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .copyright .copy{
+  padding: 2rem;
+  text-transform: capitalize;
+}
+footer .copyright .develop{
+  padding: 2rem;
 }
