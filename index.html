@@ -21,26 +21,97 @@
                     <div class="logotext">kahkeshan</div>
                 </div>
                 <div class="navigation">
-                    <div class="menuitem active"><a href="#">home</a></div>
-                    <div class="menuitem"><a href="#">company</a></div>
-                    <div class="menuitem"><a href="#">software</a></div>
-                    <div class="menuitem"><a href="#">features</a></div>
-                    <div class="menuitem"><a href="#">blogs</a></div>
-                    <div class="menuitem"><a href="#">contact</a></div>
+                    <div class="menuitem active"><a id="homelink" href="#home">home</a></div>
+                    <div class="menuitem"><a id="companylink" href="#company">company</a></div>
+                    <div class="menuitem"><a id="softwarelink" href="#software">software</a></div>
+                    <div class="menuitem"><a id="featureslink" href="#features">features</a></div>
+                    <div class="menuitem"><a id="blogslink" href="#blogs">blogs</a></div>
+                    <div class="menuitem"><a id="contactlink" href="#contact">contact</a></div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="slider">
+        <section id="home" class="slider">
             <div class="container">
-                <div class="row">
+                <div class="row slide showslide">
                     <div class="col-md-6">
                         <div class="content">
                             <div class="textbox">
-                                <h1>This is <span>move service</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="imgpart"></div>
+                    </div>
+                </div>
+                <div class="row slide slide1 hiddenslide">
+                    <div class="col-md-6">
+                        <div class="content">
+                            <div class="textbox">
+                                <h1>This is <span>move service1</span></h1>
                                 <p class="subtitle">Lorem ipsum dolor sit amet conipisicing elit.</p>
-                                <!-- <p class="text"> Asperiores provident, quasi, fugit qui, ducimus odio nihil nulla nostrum voluptates numquam tempore. Nobis sint iure id blanditiis atque, molestias quod non!</p> -->
+                                
+                                <ul>
+                                    <li> ipsLo remum dolor elitsit dipisicing.</li>
+                                    <li>Lorem ipsum dolor ectetur, adicing el adit.</li>
+                                    <li> iit amet consecte Loremtur, adipisicing elit.</li>
+                                </ul>
+                                <a href="#" class="button">contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="imgpart"></div>
+                    </div>
+                </div>
+                <div class="row slide slide2 hiddenslide">
+                    <div class="col-md-6">
+                        <div class="content">
+                            <div class="textbox">
+                                <h1>This is <span>move service2</span></h1>
+                                <p class="subtitle">Lorem ipsum dolor sit amet conipisicing elit.</p>
+                                
+                                <ul>
+                                    <li> ipsLo remum dolor elitsit dipisicing.</li>
+                                    <li>Lorem ipsum dolor ectetur, adicing el adit.</li>
+                                    <li> iit amet consecte Loremtur, adipisicing elit.</li>
+                                </ul>
+                                <a href="#" class="button">contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="imgpart"></div>
+                    </div>
+                </div>
+                <div class="row slide slide3 hiddenslide">
+                    <div class="col-md-6">
+                        <div class="content">
+                            <div class="textbox">
+                                <h1>This is <span>move service3</span></h1>
+                                <p class="subtitle">Lorem ipsum dolor sit amet conipisicing elit.</p>
+                                
+                                <ul>
+                                    <li> ipsLo remum dolor elitsit dipisicing.</li>
+                                    <li>Lorem ipsum dolor ectetur, adicing el adit.</li>
+                                    <li> iit amet consecte Loremtur, adipisicing elit.</li>
+                                </ul>
+                                <a href="#" class="button">contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="imgpart"></div>
+                    </div>
+                </div>
+                <div class="row slide slide4 hiddenslide">
+                    <div class="col-md-6">
+                        <div class="content">
+                            <div class="textbox">
+                                <h1>This is <span>move service4</span></h1>
+                                <p class="subtitle">Lorem ipsum dolor sit amet conipisicing elit.</p>
+                                
                                 <ul>
                                     <li> ipsLo remum dolor elitsit dipisicing.</li>
                                     <li>Lorem ipsum dolor ectetur, adicing el adit.</li>
@@ -56,15 +127,15 @@
                 </div>
                 <div class="row">
                     <div class="paginate">
-                        <div class="page"></div>
-                        <div class="page active"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
+                        <div onclick="slideTo(1)" class="page page1"></div>
+                        <div onclick="slideTo(2)" class="page page2 active"></div>
+                        <div onclick="slideTo(3)" class="page page3"></div>
+                        <div onclick="slideTo(4)" class="page page4"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="mainpart">
+        <section id="company" class="mainpart">
             <div class="container">
                 <div class="row">
                     <div class="head">
@@ -102,7 +173,7 @@
                 </div>
             </div>
         </section>
-        <section class="subsection software">
+        <section id="software" class="subsection software">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -129,7 +200,7 @@
                 </div>
             </div>
         </section>
-        <section class="subsection features">
+        <section id="features" class="subsection features">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -156,7 +227,7 @@
                 </div>
             </div>
         </section>
-        <section class="blogs">
+        <section id="blogs" class="blogs">
             <div class="container">
                 <div class="row">
                     <div class="title">
@@ -215,7 +286,7 @@
         </section>
     </main>
     <footer>
-        <div class="getinthouch">
+        <div id="contact" class="getinthouch">
             <div class="map">
                 <div class="googlemap"></div>
                 <div class="formbox">
@@ -318,7 +389,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">
+        <div class="copyright" id="#contactus">
             <p class="copy">copyright 2021 move services</p>
             <p class="develop">Developed by DEVER</p>
         </div>
@@ -334,6 +405,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/Draggable.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/MotionPathPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
     <script src="Assets/js/app.js"></script>
 </body>
 

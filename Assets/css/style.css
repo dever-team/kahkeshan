@@ -71,6 +71,7 @@ header {
   position: fixed;
   z-index: 1000;
   width: 100%;
+  top: 0;
 }
 nav {
   width: 100%;
@@ -122,6 +123,13 @@ nav .content .navigation .menuitem a {
 
 main .slider {
   background: var(--primary_color);
+}
+main .slider .slide{
+  opacity: 0;
+  pointer-events: none;
+}
+main .slider .hiddenslide{
+  display: none;
 }
 main .slider .content {
   margin-top: var(--header_height);
