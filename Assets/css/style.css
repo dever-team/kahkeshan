@@ -113,6 +113,15 @@ nav .content .navigation .menuitem {
   padding: 15px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+nav .content .navigation .menuitem span {
+  position: absolute;
+  height: 1px;
+  background: var(--text_secondary_color);
+  top: calc(var(--header_height) - 1px);
+  left: 0;
+  width: 0;
 }
 nav .content .navigation .active {
   border-bottom: var(--text_secondary_color) 1px solid;
@@ -178,6 +187,14 @@ main .slider .paginate .page {
   height: 12px;
   background: var(--body_color);
   margin: 3px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+main .slider .paginate .page span{
+  border-radius: 50%;
+  background: var(--text_color);
+  position: absolute;
 }
 main .slider .paginate .active {
   background: var(--text_color);
