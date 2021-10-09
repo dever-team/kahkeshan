@@ -172,10 +172,14 @@ main .slider .content .textbox a {
   display: inline-block;
   color: var(--primary_color);
   padding: 6px 24px;
-
   margin: 9px 18px;
   background: var(--body_color);
   border-radius: 100px;
+  transition: letter-spacing ease .3s, padding ease .3s;
+}
+main .slider .content .textbox a:hover {
+  letter-spacing: 1px;
+  padding: 6px 19px;
 }
 main .slider .paginate {
   margin: 10px auto;
@@ -187,6 +191,7 @@ main .slider .paginate .page {
   height: 12px;
   background: var(--body_color);
   margin: 3px;
+  border-radius: 2px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
